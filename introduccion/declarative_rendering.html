@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app" >
+        <!-- Esta es una forma de mostrar una variable de Vue
+        como lo hiciste en tu JS -->
+        {{message}} 
+        <hr>
+        <!--  -->
+        <span v-bind:title="message2">{{message2}}</span>
+    </div>
+
+    <script src="declarative_rendering.js"></script>
+</body>
+</html>

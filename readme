@@ -1,0 +1,28 @@
+¿Qué es Vue.js?
+Vue (pronunciado / vjuː /, como ver ) es un marco progresivo para construir interfaces de usuario. 
+A diferencia de otros marcos monolíticos, Vue está diseñado desde cero para ser adoptable incrementalmente.
+La biblioteca central está enfocada solo en la capa de visualización, y es fácil de seleccionar e integrar 
+con otras bibliotecas o proyectos existentes. Por otro lado, Vue también es perfectamente capaz de impulsar
+sofisticadas aplicaciones de una sola página cuando se utiliza en combinación con herramientas 
+modernas y bibliotecas de soporte .
+
+Si desea obtener más información sobre Vue antes de bucear, creamos un video que describe los principios
+ básicos y un proyecto de muestra.
+
+Si usted es un desarrollador frontend con experiencia y desea saber cómo se compara Vue con otras
+bibliotecas / marcos, consulte la Comparación con otros marcos .
+
+Empezando
+La guía oficial asume conocimientos de nivel intermedio de HTML, CSS y JavaScript.
+Si es totalmente nuevo en el desarrollo de frontend, puede que no sea la mejor idea 
+ir directamente a un marco como primer paso: comprender los conceptos básicos y luego volver.
+La experiencia previa con otros marcos ayuda, pero no es necesaria.
+
+La forma más fácil de probar Vue.js es usar el ejemplo de JSFiddle Hello World .
+Siéntase libre de abrirlo en otra pestaña y seguir a medida que avanzamos a través de 
+algunos ejemplos básicos. O bien, puede crear un index.htmlarchivo e incluir Vue con:
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+La página de Instalación ofrece más opciones para instalar Vue. Nota: no recomendamos 
+que los principiantes comiencen vue-cli, especialmente si aún no está familiarizado con 
+las herramientas de compilación basadas en Node.js.
