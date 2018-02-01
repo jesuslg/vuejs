@@ -30,6 +30,13 @@
             del array frutas se denominará fruta;y como fruta ya es un
             valor o elemento se pinta como tal {{fruta}} -->
         </ol>
+        
+        <ul>
+            <li v-for="color in colores" >{{`Color: `+color.sintaxis+`; Code`+color.code}}</li>
+        </ul>
+        <!-- Cómo te das cuenta las variables en vue puedes expresarlo como lo hice arriba
+            usando expresiones de javascript
+         -->
     </div>
     <br>
 

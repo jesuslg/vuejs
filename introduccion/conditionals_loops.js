@@ -2,7 +2,11 @@ var app3 = new Vue({
     el: "#app3",
     data: {
         seen: true, //boolean
-        frutas: ['manzana', 'pera', 'plátano', 'papaya'] //array
+        frutas: ['manzana', 'pera', 'plátano', 'papaya'], //array
+        colores: [
+            {sintaxis: "red", code: "#E02A2A"},
+            {sintaxis: "blue", code: "#1316D3"}
+        ] //acuérdate que tamb puede ser un array puede contener JSON
     }
 })
 /**
@@ -12,3 +16,4 @@ var app3 = new Vue({
  * 
  * Por otro lado ves que fruta es un array asi que ya sabes no seas gil! :v 
  */
+
