@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Una directiva más como el "v-if" sirve para poder manipular
+    las variables de vue, como "seen", ya que lo haz declarado como true
+    el mensaje te aparecerá, pero si fuera false no aparece nada.
+    Es como si lo esuvieras condicionando a toda la etiqueta <span> si cumple o no
+    para que aparezca, si no entiendes te lo pongo asi: 
+        if(seen== true){
+            <span>Ahora se ve porque es true</span>
+        }
+    Ves? es lo mismo.
+    -->
+    <div id="app3">
+        <span v-if="seen" >Ahora se ve porque es true</span>
+        <hr>
+        <!-- Acá verás el uso de la directiva v-for que sirve
+        para hacer un bucle es decir funciona como un foreach que 
+        recorre todo el contenido de la variable frutas -->
+        <ol>
+            <li v-for="fruta in frutas">{{fruta}}</li>
+            <!-- como los foreach esto se lee que cada elemento 
+            del array frutas se denominará fruta;y como fruta ya es un
+            valor o elemento se pinta como tal {{fruta}} -->
+        </ol>
+    </div>
+    <br>
+
+
+    <script src="conditionals_loops.js"></script>
+</body>
+</html>
