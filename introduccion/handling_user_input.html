@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app5">
+        <!-- Acá te muestro una directiva bien xvr, es el v-on 
+        es para poner todos los eventos click, keyup, etc...
+        y en este caso usa la funcion que declaraste -->
+        <p>{{mensajito}}</p>
+        <button v-on:click="mensajeAlReves">Cliquéame!</button>
+        <hr>
+        <p>{{mensaje2}}</p>
+        <input type="text" id="input" v-model="mensaje2">
+        <!-- Aqui te muestro el v-model en es para q te olvides de estos clásicos
+        value, checked or selected ya que con eso puedes ahorrarte un shit de codigo;
+        utiliza la variable y con la interpolación hace su magia -->
+    </div>
+
+    <script src="handling_user_input.js"></script>
+</body>
+</html>
