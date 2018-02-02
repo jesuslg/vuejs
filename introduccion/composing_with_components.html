@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Componentes</h2>
+    <!-- Esta imagen te muestra el nucleo de Vue que es trabajar por 
+    componentes -->
+    <img src="../img/components.png" style="width: 500px;" alt="">
+    <hr>
+    <div id="app7">
+        <ol>
+        <!-- Tienes que instanciar del componente todo-item -->
+        <!-- Esto vendría a ser como el componente -->
+            <todo-item v-for="heroe in heroes" v-bind:heroes="heroe" v-bind:key="heroe.id"></todo-item>
+        <!-- Ahora mira aca recorres el foreach de ahi añades una atributo con el bind
+        en este caso es heroes el cual pinta el elemento de tu foreach, en este caso es heroe
+        y el key es xq vue te pide q pongas la key nada mas -->
+        </ol>        
+    </div>
+    <script src="composing_with_components.js"></script>
+</body>
+</html>
