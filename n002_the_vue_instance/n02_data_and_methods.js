@@ -84,7 +84,8 @@ var vuem = new Vue({
 console.log(vuem.$data) // es igual a la example
 console.log(vuem.$el) // capturas el DOM document.getElementById('example'); 
 vuem.$watch('a', function(newV, oldVal){
-  console.log(`Nuevo : ${newV} - Viejo: ${oldVal}`);
+  // console.log(`Nuevo : ${newV} - Viejo: ${oldVal}`);
+  console.log(oldVal);
 })
 //Con este ultimo $watch es cuando se manipula valores 
 //y la misma lógica en si va en el html y aca hago lo q quiera dentro de la funcion
