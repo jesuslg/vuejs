@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="parte1">
+        <span>When usas MUSTACHE:</span><br>
+        *<span>{{parte1}}</span><br><span>or</span><br>
+        <span v-once >{{parte1}}</span><br>
+    </div>
+    <div id="parte2">
+        <span>When usas directiva v-html</span><br>
+        <!-- usar el mustache te bota tal cual -->
+        *<span>{{parte2}}</span><br>
+        <!-- usar la directiva v-html te muestra en formato html -->
+        *<span v-html="parte2" ></span>
+    </div>
+    <div id="parte3">
+        <span>Utilizando v-bind como un id</span><br>
+        *<span v-bind:id="parte3" >El id es {{parte3}}</span><br>
+        <span>Utilizando v-bind como un disabled y aplicando lógica</span><br>        
+        *<button v-bind:disabled="!parte3" >botoncito</button>
+    </div>
+    <div id="parte4">
+        <span>Se usa lógica javascript con el mustache</span><br>
+        *<span>Valor inicial = {{parte4}}</span><br>
+        *<span>Valor despues = {{parte4*2}}</span>
+    </div>
+
+    <script src="n01_interpolations.js"></script>
+</body>
+</html>
